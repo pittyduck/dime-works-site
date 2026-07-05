@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dime-works.com/sitemap.xml
