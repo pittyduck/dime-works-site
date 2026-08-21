@@ -181,6 +181,15 @@ footer{background:var(--ink);color:rgba(255,255,255,.55);padding:36px 0;font-siz
   .hamburger{display:block}
   .hero-stats{gap:28px}
 }
+
+/* visuals */
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero-art{display:flex;justify-content:center}
+.hero-art img{width:100%;max-width:520px;height:auto}
+.card .ico,.step .ico{width:44px;height:44px;display:block;margin-bottom:14px}
+.card .ico{color:var(--teal)}
+.step .ico{color:var(--teal)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:28px}.hero-art{order:-1}.hero-art img{max-width:360px}}
 </style>
 </head>
 <body>
@@ -262,12 +271,12 @@ footer{background:var(--ink);color:rgba(255,255,255,.55);padding:36px 0;font-siz
     <h2 class="rv">Service Areas</h2>
     <p class="lead rv">From due diligence to remediation and monitoring — one team covers the full EHS spectrum.</p>
     <div class="cards">
-      <div class="card rv" id="svc1"><div class="num">01</div><h3>Environmental Due Diligence</h3><p>Integrated analysis of internal and external contamination sources, waste, and other environmental factors to assess potential risk. (Phase I ESA, based on ASTM E1527)</p><a href="services/edd-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
-      <div class="card rv" id="svc2"><div class="num">02</div><h3>Technical Due Diligence</h3><p>Pre-acquisition and pre-investment assessment of the technical value and CAPEX/OPEX feasibility of environmental facilities such as landfills and incinerators.</p><a href="services/tdd-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
-      <div class="card rv" id="svc3"><div class="num">03</div><h3>EHS Compliance Audit</h3><p>Workplace hazard assessment, incident investigation, regulatory compliance review, and practical risk-reduction alternatives.</p><a href="services/ehs-audit-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
-      <div class="card rv" id="svc4"><div class="num">04</div><h3>Contaminated Site Management</h3><p>Phase I &amp; II environmental site assessments, soil and groundwater remediation design, and on-site management and monitoring.</p><a href="services/contaminated-site-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
-      <div class="card rv" id="svc5"><div class="num">05</div><h3>Construction Site EHS</h3><p>Environment, health, and safety management for construction and demolition of facilities handling hazardous materials, including asbestos and waste.</p><a href="services/construction-ehs-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
-      <div class="card rv" id="svc6"><div class="num">06</div><h3>ESDD/ESG · Permits</h3><p>ESDD/ESG reviews based on the Equator Principles and IFC Performance Standards, environmental permitting services, and air, water, and noise monitoring.</p><a href="services/esdd-esg-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
+      <div class="card rv" id="svc1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="M14.5 14.5 L20 20"/><path d="M7 9h6M7 12h4"/></svg><div class="num">01</div><h3>Environmental Due Diligence</h3><p>Integrated analysis of internal and external contamination sources, waste, and other environmental factors to assess potential risk. (Phase I ESA, based on ASTM E1527)</p><a href="services/edd-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
+      <div class="card rv" id="svc2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18h18"/><path d="M5 18l4-8h6l4 8"/><path d="M12 6v4"/><path d="M9 4h6"/></svg><div class="num">02</div><h3>Technical Due Diligence</h3><p>Pre-acquisition and pre-investment assessment of the technical value and CAPEX/OPEX feasibility of environmental facilities such as landfills and incinerators.</p><a href="services/tdd-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
+      <div class="card rv" id="svc3"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M8.5 13l2.5 2.5 4.5-5"/></svg><div class="num">03</div><h3>EHS Compliance Audit</h3><p>Workplace hazard assessment, incident investigation, regulatory compliance review, and practical risk-reduction alternatives.</p><a href="services/ehs-audit-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
+      <div class="card rv" id="svc4"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s5 5.5 5 9.5a5 5 0 0 1-10 0C7 8.5 12 3 12 3z"/><path d="M4 20h16M6 23h12"/></svg><div class="num">04</div><h3>Contaminated Site Management</h3><p>Phase I &amp; II environmental site assessments, soil and groundwater remediation design, and on-site management and monitoring.</p><a href="services/contaminated-site-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
+      <div class="card rv" id="svc5"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16a8 8 0 0 1 16 0"/><path d="M2 16h20"/><path d="M12 8v4"/><path d="M9 9.5V8M15 9.5V8"/></svg><div class="num">05</div><h3>Construction Site EHS</h3><p>Environment, health, and safety management for construction and demolition of facilities handling hazardous materials, including asbestos and waste.</p><a href="services/construction-ehs-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
+      <div class="card rv" id="svc6"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><div class="num">06</div><h3>ESDD/ESG · Permits</h3><p>ESDD/ESG reviews based on the Equator Principles and IFC Performance Standards, environmental permitting services, and air, water, and noise monitoring.</p><a href="services/esdd-esg-en.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">Learn more →</a></div>
     </div>
   </div>
 </section>
@@ -278,11 +287,11 @@ footer{background:var(--ink);color:rgba(255,255,255,.55);padding:36px 0;font-siz
     <h2 class="rv">How We Work</h2>
     <p class="lead rv">Every due diligence and audit engagement follows a consistent three-phase process, with each phase's deliverables forming the basis for the next.</p>
     <div class="steps">
-      <div class="step rv"><div class="num">01</div><h3>Document Review</h3>
+      <div class="step rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><div class="num">01</div><h3>Document Review</h3>
         <ul><li>Data collection &amp; review / site and facility history</li><li>Environmental permits &amp; satellite imagery review</li><li>Analysis of chemical and petroleum handling history</li></ul></div>
-      <div class="step rv"><div class="num">02</div><h3>Site Survey</h3>
+      <div class="step rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2"/></svg><div class="num">02</div><h3>Site Survey</h3>
         <ul><li>Soil &amp; groundwater contamination screening</li><li>Adequacy review of pollution control facilities</li><li>Asbestos, PCB &amp; hazardous materials / staff interviews</li></ul></div>
-      <div class="step rv"><div class="num">03</div><h3>Reporting</h3>
+      <div class="step rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 16v-4M12 16V9M16 16v-6"/></svg><div class="num">03</div><h3>Reporting</h3>
         <ul><li>Quantitative risk analysis and rating</li><li>Recommendations for further investigation or remediation</li><li>Cost estimation and practical alternatives</li></ul></div>
     </div>
   </div>

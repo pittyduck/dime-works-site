@@ -195,6 +195,15 @@ footer{background:var(--ink);color:rgba(255,255,255,.55);padding:36px 0;font-siz
   .hamburger{display:block}
   .hero-stats{gap:28px}
 }
+
+/* visuals */
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero-art{display:flex;justify-content:center}
+.hero-art img{width:100%;max-width:520px;height:auto}
+.card .ico,.step .ico{width:44px;height:44px;display:block;margin-bottom:14px}
+.card .ico{color:var(--teal)}
+.step .ico{color:var(--teal)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:28px}.hero-art{order:-1}.hero-art img{max-width:360px}}
 </style>
 </head>
 <body>
@@ -276,12 +285,12 @@ footer{background:var(--ink);color:rgba(255,255,255,.55);padding:36px 0;font-siz
     <h2 class="rv">서비스 영역</h2>
     <p class="lead rv">실사에서 정화·모니터링까지, EHS 전 영역을 하나의 팀이 수행합니다.</p>
     <div class="cards">
-      <div class="card rv" id="svc1"><div class="num">01</div><h3>환경실사</h3><div class="en">Environmental Due Diligence</div><p>내·외부 오염원·폐기물 등 환경 요인을 통합 분석하여 잠재 위험을 평가합니다. (Phase I ESA, ASTM E1527 기반)</p><a href="services/edd.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
-      <div class="card rv" id="svc2"><div class="num">02</div><h3>기술실사</h3><div class="en">Technical Due Diligence</div><p>매립장·소각장 등 환경시설의 기술적 가치와 자본·운영비 타당성을 인수·투자 전 평가합니다.</p><a href="services/tdd.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
-      <div class="card rv" id="svc3"><div class="num">03</div><h3>환경·보건·안전 감사</h3><div class="en">EHS Compliance Audit</div><p>작업장 위험요소 평가, 사고 조사, 법적 규제 준수 점검 및 위험 저감 대안을 제시합니다.</p><a href="services/ehs-audit.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
-      <div class="card rv" id="svc4"><div class="num">04</div><h3>오염부지 관리</h3><div class="en">Contaminated Site Management</div><p>Phase I·II 부지환경평가와 토양·지하수 정화 설계 및 현장 관리·모니터링을 수행합니다.</p><a href="services/contaminated-site.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
-      <div class="card rv" id="svc5"><div class="num">05</div><h3>건설현장 EHS 관리</h3><div class="en">Construction Site EHS</div><p>유해물질 취급 시설의 설치·철거 현장 환경·보건·안전을 관리합니다. (석면·폐기물 포함)</p><a href="services/construction-ehs.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
-      <div class="card rv" id="svc6"><div class="num">06</div><h3>환경·사회 모니터링 · 인허가</h3><div class="en">ESDD/ESG · Permits</div><p>적도원칙·IFC 기반 ESDD/ESG 검토, 환경 인허가 대행, 대기·수질·소음 측정·모니터링을 제공합니다.</p><a href="services/esdd-esg.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
+      <div class="card rv" id="svc1"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="M14.5 14.5 L20 20"/><path d="M7 9h6M7 12h4"/></svg><div class="num">01</div><h3>환경실사</h3><div class="en">Environmental Due Diligence</div><p>내·외부 오염원·폐기물 등 환경 요인을 통합 분석하여 잠재 위험을 평가합니다. (Phase I ESA, ASTM E1527 기반)</p><a href="services/edd.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
+      <div class="card rv" id="svc2"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18h18"/><path d="M5 18l4-8h6l4 8"/><path d="M12 6v4"/><path d="M9 4h6"/></svg><div class="num">02</div><h3>기술실사</h3><div class="en">Technical Due Diligence</div><p>매립장·소각장 등 환경시설의 기술적 가치와 자본·운영비 타당성을 인수·투자 전 평가합니다.</p><a href="services/tdd.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
+      <div class="card rv" id="svc3"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1"/><path d="M8.5 13l2.5 2.5 4.5-5"/></svg><div class="num">03</div><h3>환경·보건·안전 감사</h3><div class="en">EHS Compliance Audit</div><p>작업장 위험요소 평가, 사고 조사, 법적 규제 준수 점검 및 위험 저감 대안을 제시합니다.</p><a href="services/ehs-audit.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
+      <div class="card rv" id="svc4"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s5 5.5 5 9.5a5 5 0 0 1-10 0C7 8.5 12 3 12 3z"/><path d="M4 20h16M6 23h12"/></svg><div class="num">04</div><h3>오염부지 관리</h3><div class="en">Contaminated Site Management</div><p>Phase I·II 부지환경평가와 토양·지하수 정화 설계 및 현장 관리·모니터링을 수행합니다.</p><a href="services/contaminated-site.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
+      <div class="card rv" id="svc5"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16a8 8 0 0 1 16 0"/><path d="M2 16h20"/><path d="M12 8v4"/><path d="M9 9.5V8M15 9.5V8"/></svg><div class="num">05</div><h3>건설현장 EHS 관리</h3><div class="en">Construction Site EHS</div><p>유해물질 취급 시설의 설치·철거 현장 환경·보건·안전을 관리합니다. (석면·폐기물 포함)</p><a href="services/construction-ehs.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
+      <div class="card rv" id="svc6"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><div class="num">06</div><h3>환경·사회 모니터링 · 인허가</h3><div class="en">ESDD/ESG · Permits</div><p>적도원칙·IFC 기반 ESDD/ESG 검토, 환경 인허가 대행, 대기·수질·소음 측정·모니터링을 제공합니다.</p><a href="services/esdd-esg.html" style="display:inline-block;margin-top:12px;font-weight:700;font-size:14px;color:var(--teal)">자세히 보기 →</a></div>
     </div>
   </div>
 </section>
@@ -292,11 +301,11 @@ footer{background:var(--ink);color:rgba(255,255,255,.55);padding:36px 0;font-siz
     <h2 class="rv">수행 방법론</h2>
     <p class="lead rv">모든 실사·감사 과제는 세 단계의 일관된 프로세스로 수행되며, 각 단계의 산출물이 다음 단계의 근거가 됩니다.</p>
     <div class="steps">
-      <div class="step rv"><div class="num">01</div><h3>자료조사</h3><div class="en">Document Review</div>
+      <div class="step rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><div class="num">01</div><h3>자료조사</h3><div class="en">Document Review</div>
         <ul><li>자료 수집·검토 / 부지·시설 이력</li><li>환경 인허가·위성사진 검토</li><li>취급 화학·유류물질 이력 분석</li></ul></div>
-      <div class="step rv"><div class="num">02</div><h3>현장조사</h3><div class="en">Site Survey</div>
+      <div class="step rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><circle cx="12" cy="10" r="2"/></svg><div class="num">02</div><h3>현장조사</h3><div class="en">Site Survey</div>
         <ul><li>토양·지하수 오염 가능성 검토</li><li>환경오염방지시설 적정성 점검</li><li>석면·PCB·유해물질 / 관리자 청취</li></ul></div>
-      <div class="step rv"><div class="num">03</div><h3>보고서 작성</h3><div class="en">Reporting</div>
+      <div class="step rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 16v-4M12 16V9M16 16v-6"/></svg><div class="num">03</div><h3>보고서 작성</h3><div class="en">Reporting</div>
         <ul><li>위험성 정량 분석 및 등급화</li><li>추가조사·정화 필요성 제안</li><li>개선 비용 산정 및 대안 제시</li></ul></div>
     </div>
   </div>
