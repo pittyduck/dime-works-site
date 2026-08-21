@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>기술실사 (TDD) | Dime Works</title>
+<meta name="description" content="매립장·소각장 등 환경시설의 기술적 가치와 CAPEX/OPEX 타당성을 인수·투자 전에 평가하는 기술실사 서비스. 국내 최다 수준의 매립장 실사 경험.">
+<link rel="canonical" href="https://dime-works.com/services/tdd.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="기술실사 (TDD) | Dime Works">
+<meta property="og:description" content="환경시설의 기술적 가치를 인수·투자 전에 평가하는 기술실사 서비스.">
+<meta property="og:image" content="https://dime-works.com/dimeworks_og.png">
+<meta property="og:url" content="https://dime-works.com/services/tdd.html">
+<link rel="icon" type="image/png" href="../dimeworks_og.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<style>
+:root{
+  --ink:#1B2A2F; --teal:#2FA38B; --deep:#0C536A; --mid:#1C7293;
+  --gray:#5C6B70; --mint:#E6F0EE; --mint2:#DCEAE8; --line:#D7E2E4; --bg:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Pretendard',-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+a{color:var(--mid);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
+.nav-in{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{font-weight:800;font-size:18px;color:var(--deep);letter-spacing:-.02em}
+.nav-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav-links a{color:var(--ink);font-size:14px;font-weight:500}
+.nav-links a.cta{background:var(--deep);color:#fff;padding:8px 16px;border-radius:8px}
+.nav-links a.cta:hover{background:var(--mid);text-decoration:none}
+.nav-links a.lang{font-weight:700;color:var(--deep);border:1.5px solid var(--line);padding:7px 14px;border-radius:6px}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+.crumb{font-size:13px;color:var(--gray);margin-bottom:20px}
+.tag{display:inline-block;background:var(--mint);color:var(--deep);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;margin-bottom:6px}
+.h1en{font-size:15px;color:var(--teal);font-weight:700;margin-bottom:18px}
+.standfirst{font-size:18px;color:var(--gray);line-height:1.6;margin-bottom:32px;border-bottom:1px solid var(--line);padding-bottom:28px}
+h2{font-size:23px;color:var(--deep);letter-spacing:-.01em;margin:38px 0 14px}
+p{margin-bottom:14px}
+ul.plain{padding-left:20px;margin-bottom:14px}
+ul.plain li{margin-bottom:8px}
+.fit{background:var(--mint);border-radius:12px;padding:22px 26px;margin:8px 0}
+.fit h2{margin:0 0 12px;font-size:17px;color:var(--deep)}
+.fit ul{padding-left:20px}
+.fit li{margin-bottom:8px}
+.steps{display:grid;gap:14px;margin:8px 0 14px}
+.step{border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.step b{color:var(--deep)}
+.track{border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:8px 0}
+.track ul{padding-left:20px}
+.track li{margin-bottom:8px}
+.track .yr{color:var(--gray);font-size:13px}
+.rel{background:#F7FAF9;border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:8px 0}
+.rel h2{font-size:16px;margin:0 0 10px;color:var(--gray)}
+.rel li{margin-bottom:6px}
+.cta-box{background:var(--deep);border-radius:14px;padding:32px;color:#fff;margin:40px 0 8px;text-align:center}
+.cta-box h2{color:#fff;margin:0 0 10px;font-size:22px}
+.cta-box p{color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 20px}
+.btn{display:inline-block;background:var(--teal);color:#fff;font-weight:700;padding:14px 28px;border-radius:8px}
+.btn:hover{background:#278a75;text-decoration:none}
+footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font-size:13px;color:var(--gray)}
+@media(max-width:640px){h1{font-size:26px}.nav-links{gap:12px}.nav-links a:not(.cta):not(.keep):not(.lang){display:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="nav-logo" href="../index.html">Dime Works</a>
+    <div class="nav-links">
+      <a href="../index.html#about">회사소개</a>
+      <a href="../index.html#services">서비스</a>
+      <a href="../index.html#track">수행실적</a>
+      <a href="../insights/">Insights</a>
+      <a href="../index.html#contact" class="cta keep">문의하기</a>
+      <a href="tdd-en.html" class="lang keep">EN</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumb"><a href="../index.html#services">서비스</a> · 기술실사</div>
+  <span class="tag">Service 02</span>
+  <h1>기술실사</h1>
+  <div class="h1en">Technical Due Diligence (TDD)</div>
+  <p class="standfirst">매립장·소각장 등 환경시설을 인수하거나 투자하기 전에, 시설의 기술적 가치와 자본·운영비(CAPEX/OPEX) 타당성을 현장 실사 기반으로 평가합니다. 폐기물 매립업 인수·매각이 활발해진 지금, 기술 리스크 검증이 투자 판단의 핵심입니다.</p>
+
+  <div class="fit">
+    <h2>이런 상황이라면 필요합니다</h2>
+    <ul>
+      <li>매립장·소각장 등 <b>환경시설 인수·매각</b>을 검토할 때</li>
+      <li>투자 대상 시설의 <b>잔여 가치와 운영 비용</b>을 검증해야 할 때</li>
+      <li>대주단·투자심의가 <b>독립적인 기술 검토 보고서</b>를 요구할 때</li>
+    </ul>
+  </div>
+
+  <h2>수행 범위</h2>
+  <ul class="plain">
+    <li>잔여 매립용량 산정 및 시설 수명 평가</li>
+    <li>차수시설·침출수 처리시설 상태 점검</li>
+    <li>운영·사후관리 비용(CAPEX/OPEX) 타당성 검토</li>
+    <li>인허가 조건·사후관리 의무 검토</li>
+    <li>기술 리스크 정량화 및 투자 판단 근거 제시</li>
+  </ul>
+
+  <h2>진행 방식</h2>
+  <div class="steps">
+    <div class="step"><b>01 자료조사</b> — 시설 설계·운영 자료, 인허가 조건, 매립·처리 이력을 검토합니다.</div>
+    <div class="step"><b>02 현장조사</b> — 시설 상태를 직접 점검하고 운영진 인터뷰로 실제 운영 리스크를 파악합니다.</div>
+    <div class="step"><b>03 보고서</b> — 기술적 가치와 비용 타당성을 정량 분석하고 투자 관점의 리스크·대안을 제시합니다.</div>
+  </div>
+
+  <h2>주요 실적</h2>
+  <div class="track">
+    <ul>
+      <li><b>에코비트 매립장 6개소 기술실사</b> <span class="yr">2024</span></li>
+      <li><b>한국코카콜라 부지 기술실사</b> <span class="yr">2024–25</span></li>
+      <li><b>부산 그린파워 매립장 기술실사</b> <span class="yr">2025</span></li>
+      <li><b>화성 석포리 매립장 기술실사</b> <span class="yr">2025</span></li>
+    </ul>
+    <p style="margin:10px 0 0;font-size:14px;color:var(--gray)">에코비트 · TSK · EMC · 코엔텍 · SK에코플랜트 등 국내 최다 수준의 매립장 실사 수행</p>
+  </div>
+
+  <div class="cta-box">
+    <h2>환경시설 투자를 검토 중이신가요?</h2>
+    <p>시설 유형과 거래 구조에 맞는 기술실사 범위를 안내해 드립니다.</p>
+    <a class="btn" href="../index.html#contact">기술실사 문의하기</a>
+  </div>
+</div>
+
+<footer>© 2026 Dime Works · <a href="../index.html">dime-works.com</a> · <a href="../privacy.html">Privacy</a></footer>
+
+</body>
+</html>
