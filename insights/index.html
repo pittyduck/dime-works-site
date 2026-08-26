@@ -41,7 +41,12 @@ nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(
 .nav-links a.cta:hover{background:var(--mid);text-decoration:none}
 .wrap{max-width:860px;margin:0 auto;padding:56px 24px 72px}
 h1{font-size:34px;letter-spacing:-.02em;color:var(--ink);margin-bottom:10px}
-.sub{font-size:17px;color:var(--gray);margin-bottom:40px;max-width:620px}
+.sub{font-size:17px;color:var(--gray);margin-bottom:28px;max-width:620px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.chip{border:1.5px solid var(--line);background:#fff;color:var(--gray);font-size:13px;font-weight:600;padding:7px 16px;border-radius:999px;cursor:pointer;font-family:inherit;transition:all .12s ease}
+.chip:hover{border-color:var(--teal);color:var(--deep)}
+.chip.active{background:var(--deep);border-color:var(--deep);color:#fff}
+.card.hide{display:none}
 .card{display:block;border:1px solid var(--line);border-radius:14px;padding:28px;margin-bottom:20px;transition:box-shadow .15s ease;color:inherit}
 .card:hover{box-shadow:0 6px 24px rgba(12,83,106,.10);text-decoration:none}
 .card .tag{display:inline-block;background:var(--mint);color:var(--deep);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:12px}
@@ -71,6 +76,22 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font
   <h1>Insights</h1>
   <p class="sub">Decision-useful analysis on environmental due diligence, EHS compliance, and industrial transactions in South Korea — written for international investors, industrial companies, and their advisers.</p>
 
+  <div class="filters" id="filters" aria-label="Filter articles by topic"></div>
+
+  <a class="card" href="korea-landfill-market.html">
+    <span class="tag">Market Analysis</span>
+    <h2>Korea's Landfill Market: Scarce Airspace, Rising Prices, and a Ban Reshaping Demand</h2>
+    <p>Remaining capacity measured in years, tipping fees that doubled in five, the 2026 direct-landfill ban redesigning demand, and the ₩2 trillion consolidation wave that priced the scarcity in.</p>
+    <span class="date">26 August 2026</span>
+  </a>
+
+  <a class="card" href="landfill-due-diligence-korea.html">
+    <span class="tag">Technical Due Diligence</span>
+    <h2>Buying a Landfill in Korea: What Technical Due Diligence Covers</h2>
+    <p>The airspace you are buying, the post-closure tail you are inheriting, and how Korea's 2026 landfill overhaul — flexible post-closure periods, cash deposits, mandatory leachate monitoring — changes both sides of the model.</p>
+    <span class="date">26 August 2026</span>
+  </a>
+
   <a class="card" href="environmental-permits-korean-ma.html">
     <span class="tag">Environmental Due Diligence</span>
     <h2>Environmental Permits in a Korean Acquisition: What Transfers and What Doesn't</h2>
@@ -79,14 +100,14 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font
   </a>
 
   <a class="card" href="phase-2-site-investigation-korea.html">
-    <span class="tag">Environmental Due Diligence</span>
+    <span class="tag">Soil &amp; Remediation</span>
     <h2>Phase II in Korea: How Intrusive Investigation Actually Works</h2>
     <p>Which Korean instruments govern intrusive investigation — official test standards, detailed-investigation rules, designated institutions — and how to design one program that serves both the deal and the statute.</p>
     <span class="date">24 August 2026</span>
   </a>
 
   <a class="card" href="soil-environment-assessment-korea.html">
-    <span class="tag">Environmental Due Diligence</span>
+    <span class="tag">Soil &amp; Remediation</span>
     <h2>Korea's Soil Environment Assessment: The Statutory Baseline Tool Most Foreign Buyers Have Never Heard Of</h2>
     <p>Who can commission the Article 10-2 assessment, how its three phases run, and how to use the statutory presumption strategically — allocation evidence, exemption support, and lease-exit baselines.</p>
     <span class="date">21 August 2026</span>
@@ -101,6 +122,38 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font
 </div>
 
 <footer>© 2026 Dime Works · <a href="../en.html">dime-works.com</a> · <a href="../privacy.html">Privacy</a></footer>
+
+<script>
+(function(){
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
+  var bar = document.getElementById('filters');
+  if(!bar || !cards.length) return;
+  var tags = [];
+  cards.forEach(function(c){
+    var t = c.querySelector('.tag');
+    var name = t ? t.textContent.trim() : '';
+    if(name && tags.indexOf(name) === -1) tags.push(name);
+  });
+  if(tags.length < 2){ bar.style.display = 'none'; return; }
+  function makeChip(label, value){
+    var b = document.createElement('button');
+    b.className = 'chip'; b.type = 'button'; b.textContent = label;
+    b.addEventListener('click', function(){
+      bar.querySelectorAll('.chip').forEach(function(x){ x.classList.remove('active'); });
+      b.classList.add('active');
+      cards.forEach(function(c){
+        var t = c.querySelector('.tag');
+        var name = t ? t.textContent.trim() : '';
+        c.classList.toggle('hide', value !== null && name !== value);
+      });
+    });
+    return b;
+  }
+  var all = makeChip('All', null); all.classList.add('active');
+  bar.appendChild(all);
+  tags.forEach(function(name){ bar.appendChild(makeChip(name, name)); });
+})();
+</script>
 
 </body>
 </html>
