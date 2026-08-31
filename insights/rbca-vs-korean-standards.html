@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R7YYS498Y3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R7YYS498Y3');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Risk-Based Corrective Action vs Korea's Numeric Standards: Using ASTM E2081 Correctly | Dime Works</title>
+<meta name="description" content="RBCA reasons from site-specific risk; Korean soil law runs on numeric tables by land use. Where the ASTM E2081 logic still earns its keep on Korean sites — prioritization, deal framing, remedial design — and where it cannot substitute for the tables.">
+<link rel="canonical" href="https://dime-works.com/insights/rbca-vs-korean-standards.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Risk-Based Corrective Action vs Korea's Numeric Standards: Using ASTM E2081 Correctly">
+<meta property="og:description" content="Risk logic doesn't override Korean tables — but used correctly, it still decides priorities, deal framing, and remedial design.">
+<meta property="og:image" content="https://dime-works.com/dimeworks_og.png">
+<meta property="og:url" content="https://dime-works.com/insights/rbca-vs-korean-standards.html">
+<link rel="icon" type="image/png" href="../dimeworks_og.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Risk-Based Corrective Action vs Korea's Numeric Standards: Using ASTM E2081 Correctly",
+  "datePublished": "2026-08-31",
+  "dateModified": "2026-08-31",
+  "inLanguage": "en",
+  "author": {"@type": "Organization", "name": "Dime Works", "url": "https://dime-works.com"},
+  "publisher": {"@type": "Organization", "name": "Dime Works", "url": "https://dime-works.com"},
+  "about": ["RBCA", "ASTM E2081", "soil standards", "risk assessment", "methodology", "South Korea"],
+  "mainEntityOfPage": "https://dime-works.com/insights/rbca-vs-korean-standards.html"
+}
+</script>
+<style>
+:root{
+  --ink:#1B2A2F; --teal:#00A6D6; --deep:#0C536A; --mid:#1C7293;
+  --gray:#5C6B70; --mint:#E8F4FA; --mint2:#D6EBF5; --line:#D7E2E4; --bg:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Pretendard',-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+a{color:var(--mid);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
+.nav-in{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{font-weight:800;font-size:18px;color:var(--deep);letter-spacing:-.02em}
+.nav-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav-links a{color:var(--ink);font-size:14px;font-weight:500}
+.nav-links a.cta{background:var(--deep);color:#fff;padding:8px 16px;border-radius:8px}
+.nav-links a.cta:hover{background:var(--mid);text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+.crumb{font-size:13px;color:var(--gray);margin-bottom:20px}
+.tag{display:inline-block;background:var(--mint);color:var(--deep);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;color:var(--ink);margin-bottom:18px}
+.standfirst{font-size:18px;color:var(--gray);line-height:1.6;margin-bottom:14px}
+.meta{font-size:13px;color:var(--gray);border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:32px}
+h2{font-size:24px;color:var(--deep);letter-spacing:-.01em;margin:40px 0 14px}
+h3{font-size:18px;color:var(--ink);margin:26px 0 10px}
+p{margin-bottom:14px}
+.takeaways{background:var(--mint);border-radius:12px;padding:24px 26px;margin:8px 0 8px}
+.takeaways h2{margin:0 0 12px;font-size:18px;color:var(--deep)}
+.takeaways ul{padding-left:20px}
+.takeaways li{margin-bottom:10px}
+ol.checklist{padding-left:22px;margin-bottom:14px}
+ol.checklist li{margin-bottom:10px}
+ul.plain{padding-left:20px;margin-bottom:14px}
+ul.plain li{margin-bottom:8px}
+.scope{background:#F7FAF9;border:1px solid var(--line);border-radius:12px;padding:20px 24px;font-size:14px;color:var(--gray);margin:36px 0}
+.scope h2{font-size:16px;margin:0 0 10px;color:var(--gray)}
+.cta-box{background:var(--deep);border-radius:14px;padding:32px;color:#fff;margin:40px 0 8px;text-align:center}
+.cta-box h2{color:#fff;margin:0 0 10px;font-size:22px}
+.cta-box p{color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 20px}
+.btn{display:inline-block;background:var(--teal);color:#fff;font-weight:700;padding:14px 28px;border-radius:8px}
+.btn:hover{background:#0087AE;text-decoration:none}
+.reviewed{font-size:13px;color:var(--gray);border-top:1px solid var(--line);padding-top:18px;margin-top:36px}
+footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font-size:13px;color:var(--gray)}
+.nav-links a.lang{font-weight:700;color:var(--deep);border:1.5px solid var(--line);padding:7px 14px;border-radius:6px}
+@media(max-width:640px){h1{font-size:27px}.nav-links{gap:14px}.nav-links a:not(.cta):not(.keep):not(.lang){display:none}}
+
+/* reading aids */
+.wrap p a,.wrap li a{font-weight:700}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:34px 0 0}
+.pn a{display:block;border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.pn a:hover{text-decoration:none;box-shadow:0 4px 16px rgba(12,83,106,.10)}
+.pn .lbl{display:block;font-size:12px;color:var(--gray);margin-bottom:4px}
+.pn .t{font-weight:700;color:var(--deep);font-size:14px;line-height:1.45}
+.pn .next{text-align:right}
+@media(max-width:640px){.pn{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="nav-logo" href="../en.html">Dime Works</a>
+    <div class="nav-links">
+      <a href="../en.html#about">About</a>
+      <a href="../en.html#services">Services</a>
+      <a href="../en.html#track">Track Record</a>
+      <a class="keep" href="./">Insights</a>
+      <a href="../en.html#contact" class="cta keep">Contact</a>
+      <a href="ko/" class="lang keep">한국어</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumb"><a href="./">Insights</a> · Methodology</div>
+  <span class="tag">Methodology</span>
+  <h1>Risk-Based Corrective Action vs Korea's Numeric Standards: Using ASTM E2081 Correctly</h1>
+  <p class="standfirst">Fourth in the methodology series, and the one that prevents the most expensive category of mistake. RBCA — the risk-based corrective action framework behind ASTM E2081 — reasons from site-specific exposure to site-specific cleanup targets. Korean soil law does not: it runs on numeric tables. Confusing the two produces reports Korean regulators reject and remediation budgets set against the wrong number. Used correctly, though, the risk logic still earns its keep here.</p>
+  <div class="meta">Published 31 August 2026 · Dime Works · Reading time ~6 min</div>
+
+  <div class="takeaways">
+    <h2>Key takeaways</h2>
+    <ul>
+      <li>E2081's tiered logic — generic screens first, then progressively site-specific evaluation where warranted — is a decision framework for allocating effort against risk, not a legal instrument anywhere.</li>
+      <li>Korea's soil regime is table-driven: concern standards by land-use category decide whether statutory obligations engage. A site-specific risk argument does not switch off a table exceedance.</li>
+      <li>The most dangerous imported sentence in Korean environmental work: "it exceeds, but the risk is acceptable." True or not, it is a US-frame conclusion answering a question Korean law didn't ask.</li>
+      <li>Where risk logic legitimately works in Korea: prioritizing among multiple findings, informing deal price and urgency, designing remediation sequencing, communicating with international stakeholders — everything short of overriding the table.</li>
+      <li>The correct report structure states both frames explicitly: the Korean statutory position first, the risk characterization second, and never one disguised as the other.</li>
+    </ul>
+  </div>
+
+  <h2>What the standard actually asks for</h2>
+  <p>E2081 organizes corrective action as a tiered evaluation. In our own words: begin with conservative generic screening; where results exceed screens, either act on the conservative basis or step up a tier — building in site-specific exposure pathways, receptors, and fate-and-transport behavior from the <a href="conceptual-site-model-korea.html">conceptual site model</a> — and derive targets appropriate to how the site is actually used. The philosophy is proportionality: effort and cleanup scale to real exposure rather than to a one-size number. Within its home framework, tier-appropriate targets can become the applicable cleanup levels.</p>
+
+  <h2>Where it meets the Korean system — and stops</h2>
+  <ul class="plain">
+    <li><strong>Korea asks a different first question.</strong> The Korean regime compares concentrations against the soil concern standards, set by land-use category — stricter tables for sensitive uses, more permissive for industrial land. Exceed the applicable table and the statutory machinery — investigation, orders, the <a href="contamination-liability-korea.html">responsible-party structure</a> — engages. The land-use category is the system's own coarse risk adjustment; it is the table's flexibility, and in the main, the table's flexibility is what you get.</li>
+    <li><strong>Risk arguments don't unring the table.</strong> A beautifully executed Tier 2 evaluation concluding "no unacceptable risk" does not neutralize a statutory exceedance. Presenting it as though it does — the classic move of consultants transplanting US practice — produces a report the Korean side of the file cannot use, and worse, a client who believes a liability has been reasoned away when it hasn't. This is the same jurisdictional discipline that governs <a href="rec-to-korean-regulatory-risk.html">REC translation</a>: conclusions must be drawn in the frame that will judge them.</li>
+    <li><strong>But the logic still has four honest jobs here:</strong> (1) <em>Prioritization</em> — with five exceedances and one budget, exposure logic ranks which finding threatens receptors now versus technically-exceeds-in-place; the statute says what engages, risk says what's urgent. (2) <em>Deal framing</em> — price and indemnity negotiations are exactly the place where "how bad is this really" belongs, expressed as risk, cost range, and timing rather than as a legal conclusion. (3) <em>Remedial design</em> — sequencing, interim measures, and method selection inside a statutory cleanup are engineering decisions that risk logic legitimately drives. (4) <em>Stakeholder translation</em> — the US parent's risk committee thinks in RBCA; the CSM-plus-risk narrative is how a Korean statutory finding becomes legible to them without being distorted.</li>
+  </ul>
+
+  <h2>The mistakes that repeat</h2>
+  <ol class="checklist">
+    <li><strong>The acceptable-risk override.</strong> Concluding a Korean report with a risk-based "no further action" over a live table exceedance. The regulator reads the table; the report just impeached itself.</li>
+    <li><strong>The reverse error — table worship.</strong> Treating every exceedance as equally urgent because the table says so, spending the remediation budget on the accessible finding instead of the dangerous one. The statute sets obligations; it doesn't do your triage.</li>
+    <li><strong>Land-use category taken on faith.</strong> Applying the industrial column because the site is industrial today, while the deal thesis is redevelopment into the stricter category. The applicable number follows the future use the buyer is paying for.</li>
+    <li><strong>Risk inputs without a model.</strong> Exposure calculations run on default assumptions that contradict the site's own CSM — receptors the walk-down disproved, pathways the geology forecloses. Garbage tiers, confidently presented.</li>
+    <li><strong>One frame hidden inside the other.</strong> The report that never says which system each conclusion belongs to. The fix is structural: statutory position stated first and plainly, risk characterization second and labeled — the dual-audience architecture the <a href="environmental-report-structure-korea.html">final piece in this series</a> covers in full.</li>
+  </ol>
+
+  <div class="scope">
+    <h2>Scope limitations and uncertainty</h2>
+    <p>This article is general information, not legal advice, and describes the risk-based corrective action framework associated with ASTM E2081 at a conceptual level in our own words — it does not reproduce the standard's text, and the standard controls its own requirements. Korean statutory structures are summarized generally; the Korean-language texts control, and both risk evaluations and statutory determinations for actual sites require qualified professionals.</p>
+  </div>
+
+  <div class="cta-box">
+    <h2>Holding an exceedance and a risk argument at once?</h2>
+    <p>We keep the two frames straight — the Korean statutory position your file needs, and the risk characterization your board and counterparties can actually use.</p>
+    <a class="btn" href="../en.html#contact">Start a confidential discussion</a>
+  </div>
+
+  <div class="pn">
+    <a href="site-reconnaissance-e1527-korea.html"><span class="lbl">← Previous article</span><span class="t">Site Reconnaissance Under ASTM E1527-21: How to Walk a Korean Site</span></a>
+    <a class="next" href="field-sampling-standards-korea.html"><span class="lbl">Next article →</span><span class="t">Field Sampling on Korean Sites: The ASTM D-Series and the Korean File</span></a>
+  </div>
+
+  <p class="reviewed">Last reviewed: 31 August 2026 · Dime Works</p>
+</div>
+
+<footer>© 2026 Dime Works · <a href="../en.html">dime-works.com</a> · <a href="../privacy.html">Privacy</a></footer>
+
+</body>
+</html>

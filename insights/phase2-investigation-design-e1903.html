@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R7YYS498Y3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R7YYS498Y3');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phase II Investigation Design: Applying ASTM E1903-19 on Korean Sites | Dime Works</title>
+<meta name="description" content="How the ASTM E1903-19 design logic — objectives first, lines of evidence, iterate — actually works on a Korean site, where it meets Korean statutory procedure, and the design mistakes that repeat.">
+<link rel="canonical" href="https://dime-works.com/insights/phase2-investigation-design-e1903.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Phase II Investigation Design: Applying ASTM E1903-19 on Korean Sites">
+<meta property="og:description" content="Objectives first, evidence second, holes last. The E1903-19 design discipline, translated into Korean practice.">
+<meta property="og:image" content="https://dime-works.com/dimeworks_og.png">
+<meta property="og:url" content="https://dime-works.com/insights/phase2-investigation-design-e1903.html">
+<link rel="icon" type="image/png" href="../dimeworks_og.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Phase II Investigation Design: Applying ASTM E1903-19 on Korean Sites",
+  "datePublished": "2026-08-31",
+  "dateModified": "2026-08-31",
+  "inLanguage": "en",
+  "author": {"@type": "Organization", "name": "Dime Works", "url": "https://dime-works.com"},
+  "publisher": {"@type": "Organization", "name": "Dime Works", "url": "https://dime-works.com"},
+  "about": ["ASTM E1903-19", "Phase II ESA", "investigation design", "methodology", "South Korea"],
+  "mainEntityOfPage": "https://dime-works.com/insights/phase2-investigation-design-e1903.html"
+}
+</script>
+<style>
+:root{
+  --ink:#1B2A2F; --teal:#00A6D6; --deep:#0C536A; --mid:#1C7293;
+  --gray:#5C6B70; --mint:#E8F4FA; --mint2:#D6EBF5; --line:#D7E2E4; --bg:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Pretendard',-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+a{color:var(--mid);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
+.nav-in{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{font-weight:800;font-size:18px;color:var(--deep);letter-spacing:-.02em}
+.nav-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav-links a{color:var(--ink);font-size:14px;font-weight:500}
+.nav-links a.cta{background:var(--deep);color:#fff;padding:8px 16px;border-radius:8px}
+.nav-links a.cta:hover{background:var(--mid);text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+.crumb{font-size:13px;color:var(--gray);margin-bottom:20px}
+.tag{display:inline-block;background:var(--mint);color:var(--deep);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;color:var(--ink);margin-bottom:18px}
+.standfirst{font-size:18px;color:var(--gray);line-height:1.6;margin-bottom:14px}
+.meta{font-size:13px;color:var(--gray);border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:32px}
+h2{font-size:24px;color:var(--deep);letter-spacing:-.01em;margin:40px 0 14px}
+h3{font-size:18px;color:var(--ink);margin:26px 0 10px}
+p{margin-bottom:14px}
+.takeaways{background:var(--mint);border-radius:12px;padding:24px 26px;margin:8px 0 8px}
+.takeaways h2{margin:0 0 12px;font-size:18px;color:var(--deep)}
+.takeaways ul{padding-left:20px}
+.takeaways li{margin-bottom:10px}
+ol.checklist{padding-left:22px;margin-bottom:14px}
+ol.checklist li{margin-bottom:10px}
+ul.plain{padding-left:20px;margin-bottom:14px}
+ul.plain li{margin-bottom:8px}
+.scope{background:#F7FAF9;border:1px solid var(--line);border-radius:12px;padding:20px 24px;font-size:14px;color:var(--gray);margin:36px 0}
+.scope h2{font-size:16px;margin:0 0 10px;color:var(--gray)}
+.cta-box{background:var(--deep);border-radius:14px;padding:32px;color:#fff;margin:40px 0 8px;text-align:center}
+.cta-box h2{color:#fff;margin:0 0 10px;font-size:22px}
+.cta-box p{color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 20px}
+.btn{display:inline-block;background:var(--teal);color:#fff;font-weight:700;padding:14px 28px;border-radius:8px}
+.btn:hover{background:#0087AE;text-decoration:none}
+.reviewed{font-size:13px;color:var(--gray);border-top:1px solid var(--line);padding-top:18px;margin-top:36px}
+footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font-size:13px;color:var(--gray)}
+.nav-links a.lang{font-weight:700;color:var(--deep);border:1.5px solid var(--line);padding:7px 14px;border-radius:6px}
+@media(max-width:640px){h1{font-size:27px}.nav-links{gap:14px}.nav-links a:not(.cta):not(.keep):not(.lang){display:none}}
+
+/* reading aids */
+.wrap p a,.wrap li a{font-weight:700}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:34px 0 0}
+.pn a{display:block;border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.pn a:hover{text-decoration:none;box-shadow:0 4px 16px rgba(12,83,106,.10)}
+.pn .lbl{display:block;font-size:12px;color:var(--gray);margin-bottom:4px}
+.pn .t{font-weight:700;color:var(--deep);font-size:14px;line-height:1.45}
+.pn .next{text-align:right}
+@media(max-width:640px){.pn{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="nav-logo" href="../en.html">Dime Works</a>
+    <div class="nav-links">
+      <a href="../en.html#about">About</a>
+      <a href="../en.html#services">Services</a>
+      <a href="../en.html#track">Track Record</a>
+      <a class="keep" href="./">Insights</a>
+      <a href="../en.html#contact" class="cta keep">Contact</a>
+      <a href="ko/" class="lang keep">한국어</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumb"><a href="./">Insights</a> · Methodology</div>
+  <span class="tag">Methodology</span>
+  <h1>Phase II Investigation Design: Applying ASTM E1903-19 on Korean Sites</h1>
+  <p class="standfirst">First in a methodology series on how we actually perform the work. A Phase II program lives or dies at the design stage — before a single boring is drilled. ASTM E1903-19 exists because "go take some samples" is not a method; here is the design discipline the standard imposes, where it interlocks with Korean statutory procedure, and the design mistakes we see repeated.</p>
+  <div class="meta">Published 31 August 2026 · Dime Works · Reading time ~6 min</div>
+
+  <div class="takeaways">
+    <h2>Key takeaways</h2>
+    <ul>
+      <li>E1903-19's core demand is sequence: define the questions the investigation must answer, then choose the lines of evidence that answer them, then place the sampling — most failed programs ran this order backwards.</li>
+      <li>The standard frames investigation as iterative: each round of data updates the site understanding and justifies (or ends) the next round — a structure that maps naturally onto deal-stage and statutory-stage escalation in Korea.</li>
+      <li>On Korean sites the design must serve two masters at once: the E1903 process frame the international client recognizes, and the Korean statutory procedures — official test methods, designated institutions, the concern standards — that give results legal meaning.</li>
+      <li>The recurring design failures: grids instead of hypotheses, depths set by habit rather than contaminant behavior, parameter lists copied from the last project, and no decision rule for what any given result would change.</li>
+    </ul>
+  </div>
+
+  <h2>What the standard actually asks for</h2>
+  <p>Stripped to its logic, E1903-19 requires an investigation to be an argument, not an errand. The elements that matter in practice:</p>
+  <ul class="plain">
+    <li><strong>Objectives before holes.</strong> The program starts from explicit questions — typically inherited from the Phase I's findings and the client's decision at hand. "Is the former tank area a source?" is a designable objective; "characterize the site" is not, and the standard's discipline is largely a machine for refusing the second phrasing.</li>
+    <li><strong>A site model doing the aiming.</strong> Sampling locations, depths, and parameters follow from a working understanding of sources, pathways, and geology — the conceptual site model, which gets its own treatment in <a href="conceptual-site-model-korea.html">the next piece in this series</a>. No model, no aim.</li>
+    <li><strong>Lines of evidence, plural.</strong> Analytical results, field observations, geophysics, historical records — the standard treats these as converging evidence rather than expecting laboratory numbers to carry the conclusion alone.</li>
+    <li><strong>Iteration as a feature.</strong> The standard anticipates staged work: screen, interpret, refine, and either close the question or drill the next round with better aim. A single mobilization that answers everything is the exception, not the design target.</li>
+    <li><strong>Documentation of the reasoning.</strong> Why here, why this depth, why these parameters — recorded, so the program can be defended later by someone who wasn't there.</li>
+  </ul>
+
+  <h2>Where it meets the Korean system</h2>
+  <p>E1903 is a process guide with no legal force anywhere — in Korea, results acquire legal meaning only through the Korean apparatus. Three interfaces decide whether a well-designed program also produces a legally usable one:</p>
+  <ul class="plain">
+    <li><strong>Numbers land on Korean tables.</strong> Analytical results matter when compared against the soil concern standards and their land-use categories — so parameters, methods, and reporting limits must be chosen with the Korean comparison in mind from the start, not converted afterwards. A result the Korean official method cannot reproduce is an expensive opinion.</li>
+    <li><strong>Who samples matters, not just how.</strong> Korean statutory processes recognize work by designated institutions; a program intended to feed an official proceeding — or the statutory <a href="soil-environment-assessment-korea.html">Soil Environment Assessment</a> — must be executed by the right hands to count. The dual-frame program uses E1903 logic for design and Korean designation for execution, a split we covered in <a href="phase-2-site-investigation-korea.html">the Phase II overview</a>.</li>
+    <li><strong>The iteration gates map onto real decisions.</strong> In Korean transactions the E1903 stages align naturally with deal gates — screen during exclusivity, confirm before signing, characterize after closing if needed — and with the statutory escalation from finding to detailed investigation. Designing the rounds to land on those gates is what makes the iteration principle commercially real, as the <a href="edd-timeline-korea.html">timeline piece</a> lays out.</li>
+  </ul>
+
+  <h2>The mistakes that repeat</h2>
+  <ol class="checklist">
+    <li><strong>The grid reflex.</strong> Evenly spaced borings look rigorous and answer nothing in particular. A hypothesis-driven pattern — dense at suspected sources, sparse where the model says clean — answers the actual question at half the cost. Grids are for characterization after liability is settled, not for diligence.</li>
+    <li><strong>Depths by habit.</strong> Stopping at a standard depth regardless of contaminant behavior — light products smearing at the water table, dense solvents running deeper — produces false negatives with perfect paperwork. Depth is a per-target decision, the same logic that governs <a href="groundwater-investigation-korea.html">groundwater screen settings</a>.</li>
+    <li><strong>The copied parameter list.</strong> Last project's analyte suite, reused. Money burns on irrelevant parameters while the one that matters — the plating shop's chromium, the fab's chlorinated solvents, the <a href="pfas-korea.html">foam area's PFAS</a> — sits off-list. The site history writes the parameter list; the lab catalogue doesn't.</li>
+    <li><strong>No decision rule.</strong> The most subtle failure: nobody wrote down what any given result would change. If a hit and a non-hit lead to the same next step, the sample was decoration. Every designed point should carry an if-then that connects it to the deal or compliance decision it serves.</li>
+    <li><strong>Designing for one audience.</strong> A program that satisfies the US reviewer and is invisible to Korean procedure — or the reverse — does half its job. The design review question is always: who must accept this data, and does the design satisfy all of them at once?</li>
+  </ol>
+
+  <div class="scope">
+    <h2>Scope limitations and uncertainty</h2>
+    <p>This article is general information, not legal advice, and describes the design logic of ASTM E1903-19 at a conceptual level in our own words — it does not reproduce the standard's text, and the standard itself controls its requirements. Korean statutory procedures are summarized structurally; the Korean-language texts control, and program design for a specific site requires qualified professionals.</p>
+  </div>
+
+  <div class="cta-box">
+    <h2>Designing a Phase II on a Korean site?</h2>
+    <p>We design to E1903-19 logic and execute to Korean statutory procedure — one program, both audiences, defensible in both files.</p>
+    <a class="btn" href="../en.html#contact">Start a confidential discussion</a>
+  </div>
+
+  <div class="pn">
+    <a href="korean-environmental-regulation-updates-2026.html"><span class="lbl">← Previous article</span><span class="t">Korean Environmental Regulation Updates: What Changed, Who Is Affected, What to Do Next</span></a>
+    <a class="next" href="conceptual-site-model-korea.html"><span class="lbl">Next article →</span><span class="t">The Conceptual Site Model: Applying ASTM E1689 on Korean Sites</span></a>
+  </div>
+
+  <p class="reviewed">Last reviewed: 31 August 2026 · Dime Works</p>
+</div>
+
+<footer>© 2026 Dime Works · <a href="../en.html">dime-works.com</a> · <a href="../privacy.html">Privacy</a></footer>
+
+</body>
+</html>
