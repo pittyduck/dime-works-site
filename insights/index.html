@@ -47,6 +47,9 @@ h1{font-size:34px;letter-spacing:-.02em;color:var(--ink);margin-bottom:10px}
 .chip:hover{border-color:var(--teal);color:var(--deep)}
 .chip.active{background:var(--deep);border-color:var(--deep);color:#fff}
 .card.hide{display:none}
+.loadmore{display:block;margin:28px auto 0;border:1.5px solid var(--line);background:#fff;color:var(--deep);font-size:14px;font-weight:700;padding:12px 28px;border-radius:8px;cursor:pointer;font-family:inherit;transition:all .12s ease}
+.loadmore:hover{border-color:var(--teal);box-shadow:0 4px 16px rgba(12,83,106,.10)}
+.loadmore.hide{display:none}
 .card{display:block;border:1px solid var(--line);border-radius:14px;padding:28px;margin-bottom:20px;transition:box-shadow .15s ease;color:inherit}
 .card:hover{box-shadow:0 6px 24px rgba(12,83,106,.10);text-decoration:none}
 .card .tag{display:inline-block;background:var(--mint);color:var(--deep);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:12px}
@@ -318,39 +321,72 @@ footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font
     <p>How Korean soil-liability rules differ from the US ASTM/AAI framework, what the statutory Soil Environment Assessment offers deal teams, and how to scope a program that actually supports the transaction decision.</p>
     <span class="date">21 August 2026</span>
   </a>
+  <button class="loadmore" id="loadmore" type="button">Show more articles</button>
 </div>
 
 <footer>© 2026 Dime Works · <a href="../en.html">dime-works.com</a> · <a href="../privacy.html">Privacy</a></footer>
 
 <script>
 (function(){
+  var PAGE = 5;
   var cards = Array.prototype.slice.call(document.querySelectorAll('.card'));
   var bar = document.getElementById('filters');
-  if(!bar || !cards.length) return;
-  var tags = [];
-  cards.forEach(function(c){
+  var more = document.getElementById('loadmore');
+  if(!cards.length) return;
+  var currentTag = null;
+  var visible = PAGE;
+
+  function tagOf(c){
     var t = c.querySelector('.tag');
-    var name = t ? t.textContent.trim() : '';
-    if(name && tags.indexOf(name) === -1) tags.push(name);
-  });
-  if(tags.length < 2){ bar.style.display = 'none'; return; }
-  function makeChip(label, value){
-    var b = document.createElement('button');
-    b.className = 'chip'; b.type = 'button'; b.textContent = label;
-    b.addEventListener('click', function(){
-      bar.querySelectorAll('.chip').forEach(function(x){ x.classList.remove('active'); });
-      b.classList.add('active');
-      cards.forEach(function(c){
-        var t = c.querySelector('.tag');
-        var name = t ? t.textContent.trim() : '';
-        c.classList.toggle('hide', value !== null && name !== value);
-      });
-    });
-    return b;
+    return t ? t.textContent.trim() : '';
   }
-  var all = makeChip('All', null); all.classList.add('active');
-  bar.appendChild(all);
-  tags.forEach(function(name){ bar.appendChild(makeChip(name, name)); });
+  function filtered(){
+    return currentTag === null ? cards : cards.filter(function(c){ return tagOf(c) === currentTag; });
+  }
+  function render(){
+    var list = filtered();
+    cards.forEach(function(c){ c.classList.add('hide'); });
+    list.slice(0, visible).forEach(function(c){ c.classList.remove('hide'); });
+    if(more){
+      var remaining = list.length - visible;
+      if(remaining > 0){
+        more.classList.remove('hide');
+        more.textContent = 'Show more articles (' + remaining + ' more)';
+      } else {
+        more.classList.add('hide');
+      }
+    }
+  }
+  if(more){
+    more.addEventListener('click', function(){ visible += PAGE; render(); });
+  }
+  if(bar){
+    var tags = [];
+    cards.forEach(function(c){
+      var name = tagOf(c);
+      if(name && tags.indexOf(name) === -1) tags.push(name);
+    });
+    if(tags.length >= 2){
+      function makeChip(label, value){
+        var b = document.createElement('button');
+        b.className = 'chip'; b.type = 'button'; b.textContent = label;
+        b.addEventListener('click', function(){
+          bar.querySelectorAll('.chip').forEach(function(x){ x.classList.remove('active'); });
+          b.classList.add('active');
+          currentTag = value;
+          visible = PAGE;
+          render();
+        });
+        return b;
+      }
+      var all = makeChip('All', null); all.classList.add('active');
+      bar.appendChild(all);
+      tags.forEach(function(name){ bar.appendChild(makeChip(name, name)); });
+    } else {
+      bar.style.display = 'none';
+    }
+  }
+  render();
 })();
 </script>
 
