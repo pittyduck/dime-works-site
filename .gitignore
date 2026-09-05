@@ -1,0 +1,10 @@
+# OneDrive / Windows / macOS junk
+desktop.ini
+Thumbs.db
+ehthumbs.db
+.DS_Store
+~$*
+
+# Local tooling and notes (not part of the published site)
+.claude/
+작업일지.md
