@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R7YYS498Y3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R7YYS498Y3');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backup Power Is a Permit Stack: Generators, Fuel Storage, and Emissions at Korean Data Centers | Dime Works</title>
+<meta name="description" content="A data center's standby generators are sized for its full load, its diesel storage usually exceeds Korea's 20,000-litre soil-facility threshold, and its test schedule counts as operation. The air, soil, dangerous-substance, and noise layer that data center reviews most often under-scope.">
+<link rel="canonical" href="https://dime-works.com/insights/data-center-backup-power-permits-korea.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Backup Power Is a Permit Stack: Generators, Fuel Storage, and Emissions at Korean Data Centers">
+<meta property="og:description" content="Standby generators, diesel storage above the 20,000-litre threshold, and testing that counts as operation. The permit layer data center reviews under-scope.">
+<meta property="og:image" content="https://dime-works.com/dimeworks_og.png">
+<meta property="og:url" content="https://dime-works.com/insights/data-center-backup-power-permits-korea.html">
+<link rel="icon" type="image/png" href="../dimeworks_og.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Backup Power Is a Permit Stack: Generators, Fuel Storage, and Emissions at Korean Data Centers",
+  "datePublished": "2026-11-19",
+  "dateModified": "2026-11-19",
+  "inLanguage": "en",
+  "author": {"@type": "Organization", "name": "Dime Works", "url": "https://dime-works.com"},
+  "publisher": {"@type": "Organization", "name": "Dime Works", "url": "https://dime-works.com"},
+  "about": ["data centers", "backup generators", "fuel storage", "air emissions", "soil contamination", "EHS compliance", "South Korea"],
+  "mainEntityOfPage": "https://dime-works.com/insights/data-center-backup-power-permits-korea.html"
+}
+</script>
+<style>
+:root{
+  --ink:#1B2A2F; --teal:#00A6D6; --deep:#0C536A; --mid:#1C7293;
+  --gray:#5C6B70; --mint:#E8F4FA; --mint2:#D6EBF5; --line:#D7E2E4; --bg:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Pretendard',-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+a{color:var(--mid);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
+.nav-in{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{font-weight:800;font-size:18px;color:var(--deep);letter-spacing:-.02em}
+.nav-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav-links a{color:var(--ink);font-size:14px;font-weight:500}
+.nav-links a.cta{background:var(--deep);color:#fff;padding:8px 16px;border-radius:8px}
+.nav-links a.cta:hover{background:var(--mid);text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+.crumb{font-size:13px;color:var(--gray);margin-bottom:20px}
+.tag{display:inline-block;background:var(--mint);color:var(--deep);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;color:var(--ink);margin-bottom:18px}
+.standfirst{font-size:18px;color:var(--gray);line-height:1.6;margin-bottom:14px}
+.meta{font-size:13px;color:var(--gray);border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:32px}
+h2{font-size:24px;color:var(--deep);letter-spacing:-.01em;margin:40px 0 14px}
+h3{font-size:18px;color:var(--ink);margin:26px 0 10px}
+p{margin-bottom:14px}
+.takeaways{background:var(--mint);border-radius:12px;padding:24px 26px;margin:8px 0 8px}
+.takeaways h2{margin:0 0 12px;font-size:18px;color:var(--deep)}
+.takeaways ul{padding-left:20px}
+.takeaways li{margin-bottom:10px}
+ol.checklist{padding-left:22px;margin-bottom:14px}
+ol.checklist li{margin-bottom:10px}
+ul.plain{padding-left:20px;margin-bottom:14px}
+ul.plain li{margin-bottom:8px}
+.scope{background:#F7FAF9;border:1px solid var(--line);border-radius:12px;padding:20px 24px;font-size:14px;color:var(--gray);margin:36px 0}
+.scope h2{font-size:16px;margin:0 0 10px;color:var(--gray)}
+.cta-box{background:var(--deep);border-radius:14px;padding:32px;color:#fff;margin:40px 0 8px;text-align:center}
+.cta-box h2{color:#fff;margin:0 0 10px;font-size:22px}
+.cta-box p{color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 20px}
+.btn{display:inline-block;background:var(--teal);color:#fff;font-weight:700;padding:14px 28px;border-radius:8px}
+.btn:hover{background:#0087AE;text-decoration:none}
+.reviewed{font-size:13px;color:var(--gray);border-top:1px solid var(--line);padding-top:18px;margin-top:36px}
+footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font-size:13px;color:var(--gray)}
+.nav-links a.lang{font-weight:700;color:var(--deep);border:1.5px solid var(--line);padding:7px 14px;border-radius:6px}
+@media(max-width:640px){h1{font-size:27px}.nav-links{gap:14px}.nav-links a:not(.cta):not(.keep):not(.lang){display:none}}
+
+/* reading aids */
+.wrap p a,.wrap li a{font-weight:700}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:34px 0 0}
+.pn a{display:block;border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.pn a:hover{text-decoration:none;box-shadow:0 4px 16px rgba(12,83,106,.10)}
+.pn .lbl{display:block;font-size:12px;color:var(--gray);margin-bottom:4px}
+.pn .t{font-weight:700;color:var(--deep);font-size:14px;line-height:1.45}
+.pn .next{text-align:right}
+@media(max-width:640px){.pn{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="nav-logo" href="../index.html">Dime Works</a>
+    <div class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#track">Track Record</a>
+      <a class="keep" href="./">Insights</a>
+      <a href="../index.html#contact" class="cta keep">Contact</a>
+      <a href="ko/" class="lang keep">한국어</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumb"><a href="./">Insights</a> · ESG &amp; Sustainability · Data Center Series 4/8</div>
+  <span class="tag">ESG &amp; Sustainability</span>
+  <h1>Backup Power Is a Permit Stack: Generators, Fuel Storage, and Emissions at Korean Data Centers</h1>
+  <p class="standfirst">Fourth in our data center series. The first three articles were about the grid. This one is about what a data center installs so it can survive without the grid — and why that equipment, which exists to be almost never used, carries a regulatory profile closer to a small power plant with an attached fuel depot than to the office building the facility resembles from the street.</p>
+  <div class="meta">Published 19 November 2026 · Dime Works · Reading time ~7 min</div>
+
+  <div class="takeaways">
+    <h2>Key takeaways</h2>
+    <ul>
+      <li>A data center's standby generation is sized for the whole facility, with redundancy on top. In aggregate it is a combustion installation whose air-emission status turns on rated capacity and on how the emergency-use treatment in the facility list is applied — a determination to be confirmed with the authority, not assumed.</li>
+      <li>Diesel storage of 20,000 litres or more in total puts a site inside Korea's regime for specified soil-contamination facilities: registration, periodic soil and leak testing, and change filings when capacity moves. Most data center fuel inventories clear that threshold several times over.</li>
+      <li>Diesel is also a dangerous substance under the fire-services framework, with its own storage permit and quantity rules — a third statute on the same tanks.</li>
+      <li>The generators are tested. Regular load testing is operation for emissions and noise purposes, and a site's test regime should be read against its permit conditions and its neighbours.</li>
+      <li>Diligence should reconcile three registers — the emissions filing, the soil-facility registration, and the dangerous-substance permit — against the equipment actually installed, and read the test and inspection records rather than the equipment list.</li>
+    </ul>
+  </div>
+
+  <h2>What is actually installed</h2>
+  <p>A data center's backup system is not a generator in a basement. It is a bank of diesel engine-generator sets sized to carry the facility's full IT and cooling load, with additional units for redundancy, fed from bulk fuel storage designed to run them for a contracted number of hours — commonly a day or more — without resupply. On a large facility the installed standby capacity is measured in tens of megawatts and the fuel inventory in hundreds of thousands of litres. Regulators do not classify that installation by how often it runs; they classify it by what it is.</p>
+  <p>That produces a permit stack that a review scoped for an office or a warehouse will miss, because the equipment sits in the same three categories — combustion, fuel, and dangerous substances — that define a small industrial site. Our survey of <a href="asset-type-environmental-risks-korea.html">environmental risk by asset type</a> made the general point that the asset class sets the permit stack; on a data center, the standby system is where most of that stack lives.</p>
+
+  <h2>Air: the combustion installation</h2>
+  <p>Korea's air-quality framework divides emission sources into those requiring an installation permit — where specified hazardous air pollutants are emitted above thresholds, or where the site sits in a designated special-measures area — and the broader class requiring installation registration with the provincial or metropolitan government. Internal-combustion generating equipment appears in the facility schedule, and whether a given standby installation falls inside it depends on rated capacity and on how the schedule's treatment of emergency-use equipment is applied to a bank of units that are, individually, standby and, collectively, a power plant.</p>
+  <p>That determination should be made with the authority and documented, not inferred from the word "emergency" on the equipment schedule. Unpermitted installation or operation of a permit-class facility carries administrative sanctions up to closure orders and, in the statute, criminal penalties. For diligence, the questions are concrete: what capacity is installed; what filing — permit, registration, or a documented determination that neither applies — sits behind it; whether the filing matches the installed units after any expansion; and whether the site's actual run hours, including testing, are consistent with the basis on which the filing was made.</p>
+
+  <h2>Soil: the fuel is a specified facility</h2>
+  <p>Under Korea's soil framework, petroleum storage with a total capacity of 20,000 litres or more is a specified soil-contamination management facility — a category we have described elsewhere in the context of <a href="site-investigation-triggers-korea.html">site investigation triggers</a> and the <a href="environmental-permits-korean-ma.html">permit stack in transactions</a>. Registration with the local authority follows, together with periodic soil-contamination testing and leak testing of the tanks and lines, change filings when capacity is increased beyond a set proportion of the registered amount, and a filing when total capacity falls below the threshold. A data center's diesel inventory typically exceeds 20,000 litres by a wide margin, which places the site squarely inside the regime.</p>
+  <p>The diligence value here is the paper trail the regime generates. A registered facility has an inspection history: test dates, results, and any findings. That history either exists and reconciles with the installed tanks, or it does not — and each outcome is a finding. Where the record shows a detected release, the soil framework's duty to report without delay applies to the operator, and the liability analysis in our guide to <a href="contamination-liability-korea.html">contamination liability in Korea</a> follows. Where the record is simply missing, the facility has been operating outside the regime, which is a compliance finding before it is an environmental one.</p>
+  <p>Note also the physical configuration. Bulk diesel at data centers is commonly stored in above-ground tanks with day tanks and piping to each generator; underground storage, where present, carries the leak-detection and testing expectations that underground petroleum systems attract everywhere. The routing of fuel lines — through plant rooms, along service corridors, across slabs — determines where a release would go, and the site's spill containment and drainage design is part of the same review.</p>
+
+  <h2>Dangerous substances: a third statute on the same tanks</h2>
+  <p>Diesel is a dangerous substance under Korea's fire-services framework, with a designated quantity above which storage requires a dangerous-substance storage permit and compliance with construction, separation, and handling standards administered by the fire authority. The same tanks that trigger the soil regime therefore also trigger a fire-services permit, with its own inspection cycle, its own change procedures, and its own view of what the facility is. In a transaction, the three registers — air, soil, dangerous substances — should each be pulled and reconciled against the installed equipment, because they are maintained by different authorities and drift apart as facilities are expanded.</p>
+
+  <h2>Testing is operation</h2>
+  <p>Standby generators are tested on a schedule — typically no-load and periodic load runs — and on some sites participate in utility demand-response programs. Every run is operation for emissions and noise purposes. Noise matters more than it first appears: data centers are increasingly built at the edge of residential areas, and workplace noise limits under the noise and vibration framework apply to the site as an operating business. A test regime that was designed around equipment maintenance should be checked against permit conditions, the site's noise position, and the neighbours who will hear it, and the test logs should be read for run hours and for any events — failed starts, fuel issues — that indicate the system's actual condition.</p>
+
+  <h2>Adjacent items that belong in the same section</h2>
+  <ul class="plain">
+    <li><strong>Batteries.</strong> Uninterruptible power supply systems, increasingly lithium-ion, carry fire-safety and end-of-life waste considerations that sit next to the generator review rather than inside it.</li>
+    <li><strong>Refrigerants.</strong> The cooling plant's refrigerant inventory is a controlled-substance and greenhouse-gas item with its own record-keeping — relevant to the emissions statement discussed earlier in this series.</li>
+    <li><strong>Fuel logistics.</strong> Resupply frequency, delivery access, and the transfer point are where spills actually happen; the spill-response plan and its drills are part of the file.</li>
+  </ul>
+
+  <h2>What this means for the scope</h2>
+  <p>The backup power section of a data center review should be scoped as a small industrial site: three permit registers pulled and reconciled to installed equipment; the soil-facility inspection history read in full; the dangerous-substance permit checked against tank configuration; test logs read for run hours and events; and the spill and noise positions assessed for the site as it is actually operated. It is not a large workstream, but it is the one most often absent from a review that was scoped by looking at the building.</p>
+
+  <div class="scope">
+    <h2>Scope limitations and uncertainty</h2>
+    <p>This article is general information, not legal advice. Regulatory thresholds and categories are summarized at a general level — the 20,000-litre petroleum storage threshold for specified soil-contamination facilities is stated as set out in the soil framework's implementing rules and management guideline; the treatment of internal-combustion generating equipment under the air-emission facility schedule, including the application of any emergency-use provisions, varies with rated capacity and authority practice and is deliberately described as a determination to be confirmed rather than a stated figure; dangerous-substance designated quantities are governed by the fire-services framework and are not restated here. Article and schedule numbers are deliberately not cited; Korean-language texts control and amendments take effect on different dates. Descriptions of typical data center configurations reflect practice experience and are labelled as such. Site-specific conclusions require an engagement, not an article.</p>
+  </div>
+
+  <div class="cta-box">
+    <h2>Need a data center's backup system reviewed as the permit stack it is?</h2>
+    <p>Air, soil, and dangerous-substance registers reconciled to installed equipment, inspection histories read in full, and test and spill positions assessed on site — part of our <a href="../services/ehs-audit-en.html" style="color:#fff;text-decoration:underline">EHS compliance audit</a> and <a href="../services/esdd-esg-en.html" style="color:#fff;text-decoration:underline">ESDD/ESG</a> practices.</p>
+    <a class="btn" href="../index.html#contact">Start a confidential discussion</a>
+  </div>
+
+  <div class="pn">
+    <a href="data-center-renewable-ppa-verification-korea.html"><span class="lbl">&larr; Previous article</span><span class="t">Signed or Aspirational: Verifying Renewable Supply at a Korean Data Center</span></a>
+  <a class="next" href="data-center-water-cooling-korea.html"><span class="lbl">Next article &rarr;</span><span class="t">Water and Cooling: The Environmental Scope Most Data Center Reviews Skip</span></a>
+    </div>
+
+  <p class="reviewed">Last reviewed: 19 November 2026 · Dime Works</p>
+</div>
+
+<footer>© 2026 Dime Works · <a href="../index.html">dime-works.com</a> · <a href="../privacy.html">Privacy</a></footer>
+
+</body>
+</html>

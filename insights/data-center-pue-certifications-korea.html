@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R7YYS498Y3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R7YYS498Y3');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PUE Is Not a Building Rating: Efficiency Metrics and Certifications for Korean Data Centers | Dime Works</title>
+<meta name="description" content="Korea has no PUE rule yet, the EU is about to label data centers A to G, and the building certificates a Korean landlord holds were not designed for a facility that is mostly cooling. How to read power use effectiveness, water use effectiveness, and certification claims in data center diligence.">
+<link rel="canonical" href="https://dime-works.com/insights/data-center-pue-certifications-korea.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="PUE Is Not a Building Rating: Efficiency Metrics and Certifications for Korean Data Centers">
+<meta property="og:description" content="No Korean PUE rule, EU labels arriving, and building certificates that don't measure what a data center does. How to read efficiency claims in diligence.">
+<meta property="og:image" content="https://dime-works.com/dimeworks_og.png">
+<meta property="og:url" content="https://dime-works.com/insights/data-center-pue-certifications-korea.html">
+<link rel="icon" type="image/png" href="../dimeworks_og.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "PUE Is Not a Building Rating: Efficiency Metrics and Certifications for Korean Data Centers",
+  "datePublished": "2026-11-19",
+  "dateModified": "2026-11-19",
+  "inLanguage": "en",
+  "author": {"@type": "Organization", "name": "Dime Works", "url": "https://dime-works.com"},
+  "publisher": {"@type": "Organization", "name": "Dime Works", "url": "https://dime-works.com"},
+  "about": ["data centers", "PUE", "energy efficiency", "green building certification", "due diligence", "South Korea"],
+  "mainEntityOfPage": "https://dime-works.com/insights/data-center-pue-certifications-korea.html"
+}
+</script>
+<style>
+:root{
+  --ink:#1B2A2F; --teal:#00A6D6; --deep:#0C536A; --mid:#1C7293;
+  --gray:#5C6B70; --mint:#E8F4FA; --mint2:#D6EBF5; --line:#D7E2E4; --bg:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Pretendard',-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+a{color:var(--mid);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
+.nav-in{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{font-weight:800;font-size:18px;color:var(--deep);letter-spacing:-.02em}
+.nav-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav-links a{color:var(--ink);font-size:14px;font-weight:500}
+.nav-links a.cta{background:var(--deep);color:#fff;padding:8px 16px;border-radius:8px}
+.nav-links a.cta:hover{background:var(--mid);text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+.crumb{font-size:13px;color:var(--gray);margin-bottom:20px}
+.tag{display:inline-block;background:var(--mint);color:var(--deep);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;color:var(--ink);margin-bottom:18px}
+.standfirst{font-size:18px;color:var(--gray);line-height:1.6;margin-bottom:14px}
+.meta{font-size:13px;color:var(--gray);border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:32px}
+h2{font-size:24px;color:var(--deep);letter-spacing:-.01em;margin:40px 0 14px}
+h3{font-size:18px;color:var(--ink);margin:26px 0 10px}
+p{margin-bottom:14px}
+.takeaways{background:var(--mint);border-radius:12px;padding:24px 26px;margin:8px 0 8px}
+.takeaways h2{margin:0 0 12px;font-size:18px;color:var(--deep)}
+.takeaways ul{padding-left:20px}
+.takeaways li{margin-bottom:10px}
+ol.checklist{padding-left:22px;margin-bottom:14px}
+ol.checklist li{margin-bottom:10px}
+ul.plain{padding-left:20px;margin-bottom:14px}
+ul.plain li{margin-bottom:8px}
+.scope{background:#F7FAF9;border:1px solid var(--line);border-radius:12px;padding:20px 24px;font-size:14px;color:var(--gray);margin:36px 0}
+.scope h2{font-size:16px;margin:0 0 10px;color:var(--gray)}
+.cta-box{background:var(--deep);border-radius:14px;padding:32px;color:#fff;margin:40px 0 8px;text-align:center}
+.cta-box h2{color:#fff;margin:0 0 10px;font-size:22px}
+.cta-box p{color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 20px}
+.btn{display:inline-block;background:var(--teal);color:#fff;font-weight:700;padding:14px 28px;border-radius:8px}
+.btn:hover{background:#0087AE;text-decoration:none}
+.reviewed{font-size:13px;color:var(--gray);border-top:1px solid var(--line);padding-top:18px;margin-top:36px}
+footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font-size:13px;color:var(--gray)}
+.nav-links a.lang{font-weight:700;color:var(--deep);border:1.5px solid var(--line);padding:7px 14px;border-radius:6px}
+@media(max-width:640px){h1{font-size:27px}.nav-links{gap:14px}.nav-links a:not(.cta):not(.keep):not(.lang){display:none}}
+
+/* reading aids */
+.wrap p a,.wrap li a{font-weight:700}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:34px 0 0}
+.pn a{display:block;border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.pn a:hover{text-decoration:none;box-shadow:0 4px 16px rgba(12,83,106,.10)}
+.pn .lbl{display:block;font-size:12px;color:var(--gray);margin-bottom:4px}
+.pn .t{font-weight:700;color:var(--deep);font-size:14px;line-height:1.45}
+.pn .next{text-align:right}
+@media(max-width:640px){.pn{grid-template-columns:1fr}}
+
+table.cmp{width:100%;border-collapse:collapse;margin:16px 0 20px;font-size:15px}
+table.cmp th,table.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+table.cmp th{background:var(--mint);color:var(--deep);font-weight:700}
+.tscroll{overflow-x:auto}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="nav-logo" href="../index.html">Dime Works</a>
+    <div class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#track">Track Record</a>
+      <a class="keep" href="./">Insights</a>
+      <a href="../index.html#contact" class="cta keep">Contact</a>
+      <a href="ko/" class="lang keep">한국어</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumb"><a href="./">Insights</a> · ESG &amp; Sustainability · Data Center Series 7/8</div>
+  <span class="tag">ESG &amp; Sustainability</span>
+  <h1>PUE Is Not a Building Rating: Efficiency Metrics and Certifications for Korean Data Centers</h1>
+  <p class="standfirst">Seventh in our data center series. A Korean data center arrives in a data room with two kinds of efficiency evidence: the building certificates every commercial asset in Korea carries, and a power use effectiveness figure the operator quotes. Neither is regulated for this asset class, they measure different things, and the one that lenders and global tenants increasingly ask about is the one with no domestic rule behind it. This article sets out what each measures, what Korea does and does not require, and how to read the claim.</p>
+  <div class="meta">Published 19 November 2026 · Dime Works · Reading time ~7 min</div>
+
+  <div class="takeaways">
+    <h2>Key takeaways</h2>
+    <ul>
+      <li>Power use effectiveness — total facility energy divided by IT energy, under an international standard that fixes the measurement boundary — is the metric that describes what a data center actually does. Korea has no rule requiring it to be measured, reported, or met; the climate and energy ministry has begun reviewing a standard.</li>
+      <li>The building certificates a Korean asset carries — green building certification, energy efficiency ratings, zero-energy grades, and international schemes — rate the envelope and building systems. On a facility whose energy is overwhelmingly IT load and the cooling that serves it, they describe a small share of the total.</li>
+      <li>Korea's voluntary green data center certification does use a PUE-based score. It is an industry scheme, and its grades should be read as what they are: a certified figure at a point in time, under the scheme's own boundary.</li>
+      <li>The European Union adopted a rating scheme in September 2026 that will label facilities above 500kW of IT load on an A-to-G scale for both power and water effectiveness, with an A grade at a PUE of 1.15 or better and first labels expected from August 2027. That benchmark will reach Korean facilities through their tenants and lenders before any domestic one does.</li>
+      <li>A quoted PUE should be reconciled to metered data, a stated boundary, a load level, and a season. Design figures at full load and operating figures at partial load are different numbers, and the trade against water is part of the reading.</li>
+    </ul>
+  </div>
+
+  <h2>Two kinds of evidence, one of which is about the building</h2>
+  <p>Our earlier work on <a href="gseed-leed-korea.html">Korea's certification stack and the LEED cross-walk</a> set out how the domestic green building certification, the building energy efficiency rating, and the zero-energy building grade relate to each other and to international schemes, and our <a href="carbon-energy-due-diligence-korea.html">carbon and energy guide</a> explained how to read an energy rating as a modelled number with real information inside it. All of that holds for a data center's building. The difficulty is that the building is not where a data center's energy goes.</p>
+  <p>A modern facility's consumption is dominated by IT equipment and by the mechanical plant that removes the heat that equipment produces; the envelope, lighting, and conventional building systems that a building rating models are a small share of the total. A high building rating on a data center is therefore true and largely beside the point — it describes the shell around a machine, not the machine. International schemes have recognized this by offering data-center-specific adaptations of their building ratings; those adaptations, where a Korean facility holds one, should be read for what they add rather than assumed to be the same certificate as an office's.</p>
+
+  <h2>PUE: the metric that describes the machine</h2>
+  <p>Power use effectiveness divides total facility energy by the energy delivered to IT equipment. A figure of 1.0 would mean every kilowatt-hour reached a server; the difference above 1.0 is cooling, power conversion, and everything else. Global averages have been reported in the mid-1.5 range through the 2020s, with the largest operators publishing figures well below that. The international standard fixes the measurement boundary and method so that figures are comparable — a point that matters because a PUE with an undeclared boundary can be made to say almost anything.</p>
+  <p>Korea does not regulate the figure. There is no requirement to measure it, report it, or achieve a threshold, and the climate and energy ministry's review of a PUE standard for AI data centers was, at the time of writing, at the study stage. What exists domestically is a voluntary green data center certification run by the industry association, which scores facilities on a PUE-based infrastructure efficiency index alongside a smaller set of green-activity criteria, and issues grades keyed to PUE bands. It is a legitimate signal — a certified figure under a declared method — and a limited one: a point-in-time result under the scheme's own boundary, on a scheme whose bands and weightings were set by the industry it certifies.</p>
+
+  <h2>The benchmark is arriving from outside</h2>
+  <p>In September 2026 the European Commission adopted a delegated regulation establishing a mandatory rating scheme for data centers. Once in force, it will label facilities above 500kW of IT load on an A-to-G scale for both power and water use effectiveness, as independent grades rather than a composite, with the facility's name, operator, location, and heat-recovery readiness on the label. As reported, an A grade for power sits at a PUE of 1.15 or better, an A grade for water at 0.10 litres per kWh, and first labels are expected from August 2027. None of that applies to a Korean facility directly. All of it applies to a Korean facility with a European tenant, a European lender, or a parent reporting into a European framework — which is to say, most of the facilities that international capital is buying. Diligence that measures a Korean facility against the domestic position measures it against nothing; the working benchmark is the one its counterparties use.</p>
+
+  <h2>How to read a quoted figure</h2>
+  <div class="tscroll">
+  <table class="cmp">
+    <tr><th>Question</th><th>Why it changes the number</th></tr>
+    <tr><td>Metered or modelled?</td><td>A design PUE is a full-load engineering figure. An operating PUE is measured. Facilities are rarely at full load, and PUE worsens at partial load because fixed plant overhead is spread over less IT energy.</td></tr>
+    <tr><td>What boundary?</td><td>Whether the figure includes or excludes standby plant, office areas, and losses at particular points in the power chain changes it materially. The international standard exists to fix this; a quoted figure should state which boundary it uses.</td></tr>
+    <tr><td>Which period?</td><td>Cooling energy is seasonal. An annual figure and a best-month figure are different claims, and a facility with evaporative cooling will show a strong summer sensitivity.</td></tr>
+    <tr><td>At what load?</td><td>A facility in ramp-up will report a poor PUE that improves as tenants arrive; a facility quoting its stabilized figure before it has stabilized is quoting a forecast.</td></tr>
+    <tr><td>At what water cost?</td><td>A low PUE achieved through evaporative cooling is bought with water; the <a href="data-center-water-cooling-korea.html">water use effectiveness</a> figure belongs beside it, as the European label will show them.</td></tr>
+  </table>
+  </div>
+
+  <h2>What this means for the report</h2>
+  <p>The efficiency section of a data center review should separate the two kinds of evidence and state what each proves. The building certificates prove what they prove about the shell, cross-walked as our earlier guide describes. The PUE figure should be reconciled to metered data over a stated period, at a stated boundary and load, with the corresponding water figure beside it — and positioned against the external benchmark the facility's actual counterparties apply, not against a domestic rule that does not yet exist. Where the operator can supply only a design figure or a certification grade, that is a finding: the facility has an efficiency claim and not yet an efficiency record.</p>
+
+  <div class="scope">
+    <h2>Scope limitations and uncertainty</h2>
+    <p>This article is general information, not legal or investment advice. Global PUE averages are as reported in industry sources for the periods stated; the Korean voluntary certification scheme is described from press coverage of its structure at launch and its current bands and weightings should be confirmed with the scheme; the European labelling proposals are described from press reporting of a package not yet adopted at the time of writing; the Korean ministry's review of a PUE standard is described as at the study stage as reported. The characterization of building certificates as describing a small share of a data center's energy reflects the general energy profile of the asset class and our practice experience, and is labelled as such. Korean-language texts and the relevant scheme documents control. Site-specific conclusions require an engagement, not an article.</p>
+  </div>
+
+  <div class="cta-box">
+    <h2>Need a data center's efficiency claim reconciled to its record?</h2>
+    <p>Metered PUE and WUE over a stated boundary, period, and load, cross-walked against the building certificates and positioned against the benchmarks your tenants and lenders use — part of our <a href="../services/esdd-esg-en.html" style="color:#fff;text-decoration:underline">ESDD/ESG practice</a>.</p>
+    <a class="btn" href="../index.html#contact">Start a confidential discussion</a>
+  </div>
+
+  <div class="pn">
+    <a href="data-center-construction-ehs-korea.html"><span class="lbl">&larr; Previous article</span><span class="t">Building a Data Center in Korea: The Construction-Phase EHS an Investor Inherits</span></a>
+  <a class="next" href="data-center-grid-findings-to-contract-korea.html"><span class="lbl">Next article &rarr;</span><span class="t">From Grid Findings to the Contract: Data Center Lease and Deal Terms in Korea</span></a>
+    </div>
+
+  <p class="reviewed">Last reviewed: 19 November 2026 · Dime Works</p>
+</div>
+
+<footer>© 2026 Dime Works · <a href="../index.html">dime-works.com</a> · <a href="../privacy.html">Privacy</a></footer>
+
+</body>
+</html>

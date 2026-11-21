@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R7YYS498Y3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R7YYS498Y3');
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Water and Cooling: The Environmental Scope Most Data Center Reviews Skip | Dime Works</title>
+<meta name="description" content="Korean data centers average about 1.8 litres of water per kWh of IT load against a best practice of 0.4, and there is no domestic measurement or reporting rule. How evaporation, blowdown, water source, and cooling design become a diligence workstream on a Korean data center.">
+<link rel="canonical" href="https://dime-works.com/insights/data-center-water-cooling-korea.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Water and Cooling: The Environmental Scope Most Data Center Reviews Skip">
+<meta property="og:description" content="1.8 litres per kWh against a best practice of 0.4, and no domestic reporting rule. How cooling design turns into a diligence workstream.">
+<meta property="og:image" content="https://dime-works.com/dimeworks_og.png">
+<meta property="og:url" content="https://dime-works.com/insights/data-center-water-cooling-korea.html">
+<link rel="icon" type="image/png" href="../dimeworks_og.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Water and Cooling: The Environmental Scope Most Data Center Reviews Skip",
+  "datePublished": "2026-11-19",
+  "dateModified": "2026-11-19",
+  "inLanguage": "en",
+  "author": {"@type": "Organization", "name": "Dime Works", "url": "https://dime-works.com"},
+  "publisher": {"@type": "Organization", "name": "Dime Works", "url": "https://dime-works.com"},
+  "about": ["data centers", "water usage", "cooling", "WUE", "wastewater", "due diligence", "South Korea"],
+  "mainEntityOfPage": "https://dime-works.com/insights/data-center-water-cooling-korea.html"
+}
+</script>
+<style>
+:root{
+  --ink:#1B2A2F; --teal:#00A6D6; --deep:#0C536A; --mid:#1C7293;
+  --gray:#5C6B70; --mint:#E8F4FA; --mint2:#D6EBF5; --line:#D7E2E4; --bg:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Pretendard',-apple-system,'Segoe UI',sans-serif;color:var(--ink);background:var(--bg);line-height:1.65;font-size:16px}
+a{color:var(--mid);text-decoration:none}
+a:hover{text-decoration:underline}
+nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:50}
+.nav-in{max-width:1080px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.nav-logo{font-weight:800;font-size:18px;color:var(--deep);letter-spacing:-.02em}
+.nav-links{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.nav-links a{color:var(--ink);font-size:14px;font-weight:500}
+.nav-links a.cta{background:var(--deep);color:#fff;padding:8px 16px;border-radius:8px}
+.nav-links a.cta:hover{background:var(--mid);text-decoration:none}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px 72px}
+.crumb{font-size:13px;color:var(--gray);margin-bottom:20px}
+.tag{display:inline-block;background:var(--mint);color:var(--deep);font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:4px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:34px;line-height:1.25;letter-spacing:-.02em;color:var(--ink);margin-bottom:18px}
+.standfirst{font-size:18px;color:var(--gray);line-height:1.6;margin-bottom:14px}
+.meta{font-size:13px;color:var(--gray);border-bottom:1px solid var(--line);padding-bottom:22px;margin-bottom:32px}
+h2{font-size:24px;color:var(--deep);letter-spacing:-.01em;margin:40px 0 14px}
+h3{font-size:18px;color:var(--ink);margin:26px 0 10px}
+p{margin-bottom:14px}
+.takeaways{background:var(--mint);border-radius:12px;padding:24px 26px;margin:8px 0 8px}
+.takeaways h2{margin:0 0 12px;font-size:18px;color:var(--deep)}
+.takeaways ul{padding-left:20px}
+.takeaways li{margin-bottom:10px}
+ol.checklist{padding-left:22px;margin-bottom:14px}
+ol.checklist li{margin-bottom:10px}
+ul.plain{padding-left:20px;margin-bottom:14px}
+ul.plain li{margin-bottom:8px}
+.scope{background:#F7FAF9;border:1px solid var(--line);border-radius:12px;padding:20px 24px;font-size:14px;color:var(--gray);margin:36px 0}
+.scope h2{font-size:16px;margin:0 0 10px;color:var(--gray)}
+.cta-box{background:var(--deep);border-radius:14px;padding:32px;color:#fff;margin:40px 0 8px;text-align:center}
+.cta-box h2{color:#fff;margin:0 0 10px;font-size:22px}
+.cta-box p{color:rgba(255,255,255,.85);max-width:520px;margin:0 auto 20px}
+.btn{display:inline-block;background:var(--teal);color:#fff;font-weight:700;padding:14px 28px;border-radius:8px}
+.btn:hover{background:#0087AE;text-decoration:none}
+.reviewed{font-size:13px;color:var(--gray);border-top:1px solid var(--line);padding-top:18px;margin-top:36px}
+footer{border-top:1px solid var(--line);padding:28px 24px;text-align:center;font-size:13px;color:var(--gray)}
+.nav-links a.lang{font-weight:700;color:var(--deep);border:1.5px solid var(--line);padding:7px 14px;border-radius:6px}
+@media(max-width:640px){h1{font-size:27px}.nav-links{gap:14px}.nav-links a:not(.cta):not(.keep):not(.lang){display:none}}
+
+/* reading aids */
+.wrap p a,.wrap li a{font-weight:700}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:34px 0 0}
+.pn a{display:block;border:1px solid var(--line);border-radius:12px;padding:14px 18px}
+.pn a:hover{text-decoration:none;box-shadow:0 4px 16px rgba(12,83,106,.10)}
+.pn .lbl{display:block;font-size:12px;color:var(--gray);margin-bottom:4px}
+.pn .t{font-weight:700;color:var(--deep);font-size:14px;line-height:1.45}
+.pn .next{text-align:right}
+@media(max-width:640px){.pn{grid-template-columns:1fr}}
+
+.stat{display:flex;gap:20px;align-items:center;background:#F7FAF9;border:1px solid var(--line);border-radius:12px;padding:20px 24px;margin:20px 0}
+.stat b{font-size:32px;color:var(--deep);font-weight:800;line-height:1;white-space:nowrap}
+.stat span{font-size:14px;color:var(--gray)}
+table.cmp{width:100%;border-collapse:collapse;margin:16px 0 20px;font-size:15px}
+table.cmp th,table.cmp td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+table.cmp th{background:var(--mint);color:var(--deep);font-weight:700}
+.tscroll{overflow-x:auto}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="nav-logo" href="../index.html">Dime Works</a>
+    <div class="nav-links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#track">Track Record</a>
+      <a class="keep" href="./">Insights</a>
+      <a href="../index.html#contact" class="cta keep">Contact</a>
+      <a href="ko/" class="lang keep">한국어</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="crumb"><a href="./">Insights</a> · ESG &amp; Sustainability · Data Center Series 5/8</div>
+  <span class="tag">ESG &amp; Sustainability</span>
+  <h1>Water and Cooling: The Environmental Scope Most Data Center Reviews Skip</h1>
+  <p class="standfirst">Fifth in our data center series. Power gets the attention because power is where Korean data center projects fail. Water is where the ones that succeed get surprised. A facility that rejects tens of megawatts of heat around the clock has a water profile set almost entirely by its cooling design — and Korea has, as yet, no rule that requires anyone to measure it.</p>
+  <div class="meta">Published 19 November 2026 · Dime Works · Reading time ~7 min</div>
+
+  <div class="takeaways">
+    <h2>Key takeaways</h2>
+    <ul>
+      <li>Korean data centers are reported to average about 1.8 litres of water per kWh of IT energy — roughly four and a half times a best-practice figure of 0.4 — and consumption is projected to more than double between 2025 and 2031. There is no domestic measurement or reporting requirement for water use effectiveness.</li>
+      <li>Where evaporative cooling is used, water leaves the site three ways — evaporation, blowdown, and drift — and only blowdown comes back as a discharge. The cooling design, not the building, sets the water balance.</li>
+      <li>Water source is its own permit question: municipal supply is a contract, groundwater is a licensed abstraction under the groundwater framework, and seawater — increasingly proposed for coastal sites — brings intake, thermal discharge, and marine questions with it.</li>
+      <li>Blowdown is chemically treated water. Whether it goes to sewer or to a receiving body, and what it carries, determines its regulatory route — a determination to be made from the actual discharge point, not from the assumption that cooling water is clean.</li>
+      <li>Liquid cooling for AI loads changes the profile rather than removing it: less on-site evaporation, more electrical load, and a heat-rejection design that still has to be read.</li>
+    </ul>
+  </div>
+
+  <h2>The numbers, and the gap around them</h2>
+  <p>Water use at data centers is normalized as water use effectiveness — litres consumed per kilowatt-hour of IT equipment energy, under an international standard that sits beside the one for power use effectiveness. On that measure, the reported average for Korean facilities is about 1.8 litres per kWh, against international best-practice figures in the range of 0.3 to 0.7 and published operator figures from the largest global platforms well below that. National consumption was reported at roughly 74 billion litres in 2025, with a forecast of about 178 billion by 2031 — a compound growth rate above 15% a year — as AI-driven capacity comes online.</p>
+  <div class="stat"><b>1.8 L/kWh</b><span>reported average water use effectiveness for Korean data centers, against a best-practice figure of about 0.4 — as cited in industry press, September 2026.</span></div>
+  <p>What the numbers do not sit inside is a rule. Korea has no requirement that data centers measure, report, or meet a water use effectiveness figure; industry press describes the position as an institutional gap. The European Union, by contrast, adopted a scheme in September 2026 to grade the power and water effectiveness of facilities above 500kW of IT load on an A-to-G scale with public labels — a first issuance expected from August 2027, and a water A-grade set at 0.10 litres per kWh. For a Korean facility with a global tenant or lender, that external benchmark will arrive before any domestic one does, and diligence should measure against it now rather than wait to be measured against it later.</p>
+
+  <h2>Where the water goes</h2>
+  <p>On a facility with evaporative cooling — cooling towers, or evaporative stages in a hybrid system — the water balance has three exits. Evaporation removes heat and is lost; it is the largest term and cannot be recovered. Blowdown is the deliberate discharge of concentrated water to keep dissolved solids in check, and it is the one term that returns as a discharge. Drift is the fine loss carried out in the airstream. Make-up water replaces all three, continuously. A facility's water use effectiveness is essentially a function of how much of its heat rejection runs through evaporation, which is a design decision made before the first server is installed.</p>
+  <p>Air-cooled and closed-loop designs — dry coolers, adiabatic systems that spray only on hot days, chilled-water loops that never see the atmosphere — consume far less water and correspondingly more electricity. That trade is the reason a data center's water and carbon positions should be read together: a low water figure achieved by dry cooling is bought with grid power at the grid's emissions intensity, and a low power figure achieved by evaporation is bought with water. The <a href="data-center-renewable-ppa-verification-korea.html">renewable supply</a> position determines what the electrical side of that trade actually costs in emissions terms.</p>
+
+  <h2>Water source is a permit question</h2>
+  <div class="tscroll">
+  <table class="cmp">
+    <tr><th>Source</th><th>What it involves</th><th>What diligence checks</th></tr>
+    <tr><td>Municipal supply</td><td>A contract with the water utility, sized for peak make-up demand.</td><td>Contracted capacity against design make-up at peak; supply security in the service area; tariff exposure as volumes grow.</td></tr>
+    <tr><td>Groundwater</td><td>Abstraction from on-site wells under the groundwater framework's permit or registration regime, with volume limits and quality obligations.</td><td>The abstraction permit and its ceiling; monitoring records; the aquifer's condition and other users; and the interaction with any contamination question — see our <a href="groundwater-investigation-korea.html">groundwater investigation guide</a>.</td></tr>
+    <tr><td>Seawater</td><td>Once-through or heat-exchanged cooling from a marine intake — the design increasingly proposed for coastal, non-capital-region sites.</td><td>Intake and thermal discharge approvals, the marine and fisheries interface, biofouling and corrosion regimes, and the community-acceptance position, which is a scored item in the grid assessment and a live one locally.</td></tr>
+    <tr><td>Reclaimed water</td><td>Treated effluent from a public or industrial source used as make-up.</td><td>Supply agreement and quality specification; treatment on site; the chemistry it brings into the tower and out in blowdown.</td></tr>
+  </table>
+  </div>
+
+  <h2>Blowdown is a discharge</h2>
+  <p>Cooling-tower blowdown is not clean water. It carries the concentrated solids the blowdown exists to remove, together with the biocides, corrosion inhibitors, and scale inhibitors dosed into the circuit. Where it goes determines its regulatory treatment. A connection to the public sewer brings the sewerage framework's acceptance standards and charges, which scale with volume and load. A discharge to a receiving body brings Korea's water-quality framework, under which discharge facilities are classified by daily volume — a classification set by the maximum discharge day of the year, not the average — with permitting and self-monitoring obligations that follow from the class, as described in our guide to <a href="wastewater-compliance-korea.html">wastewater compliance in Korean manufacturing</a>. Whether a particular cooling circuit's discharge falls inside the facility definitions is a determination to be made from the actual configuration and chemistry, not inferred from the words "cooling water."</p>
+  <p>Two configurations deserve specific attention. A site whose blowdown was originally routed to sewer and later re-routed — because volumes grew past what the sewer operator would accept — has changed regulatory regime, and the file should show that it noticed. And a site running seawater or reclaimed water has a blowdown chemistry different from a municipal-water tower, with a discharge profile to match.</p>
+
+  <h2>Liquid cooling changes the shape, not the question</h2>
+  <p>High-density AI loads are pushing direct-to-chip and immersion cooling into new builds and retrofits. These systems move heat from the server in liquid rather than air, and where they reject it through closed loops and dry coolers, on-site evaporation falls sharply. They do not remove the heat-rejection question; they relocate it. A liquid-cooled hall still has a rejection design — dry, hybrid, or evaporative — and that design still sets the water balance, the electrical penalty, and the discharge profile. The diligence question for a liquid-cooled facility is the same one as for a conventional one, asked of a different drawing.</p>
+
+  <h2>What this means for the scope</h2>
+  <ol class="checklist">
+    <li><strong>Get the cooling design, not the marketing.</strong> The heat-rejection scheme, its evaporative fraction, and the design make-up and blowdown volumes at peak load.</li>
+    <li><strong>Establish the source and its permit.</strong> Contract, abstraction licence, or marine approval — with ceilings and monitoring records.</li>
+    <li><strong>Trace the blowdown.</strong> Route, chemistry, volume, and the regulatory regime that actually applies at the discharge point.</li>
+    <li><strong>Measure the effectiveness figure.</strong> Even without a domestic rule, compute the water use effectiveness from metered make-up and IT load — and note where it sits against the external benchmarks a global tenant or lender will apply.</li>
+    <li><strong>Read water and carbon together.</strong> A low figure on one is often a design choice paid for on the other.</li>
+  </ol>
+
+  <div class="scope">
+    <h2>Scope limitations and uncertainty</h2>
+    <p>This article is general information, not legal or investment advice. The Korean average water use effectiveness, national consumption figures, and growth forecast are attributed to a market-research source as cited in industry press dated September 2026 and are not independently verified; international benchmark figures are as reported in the sources cited. The European labelling scheme is described from press reporting of proposals not yet adopted at the time of writing. Regulatory routes for water abstraction and discharge are summarized at a general level — the classification of any specific cooling-water discharge under the water-quality or sewerage frameworks depends on configuration, chemistry, and volume and is deliberately described as a determination to be made rather than a stated outcome. Article numbers are deliberately not cited; Korean-language texts control. Site-specific conclusions require an engagement, not an article.</p>
+  </div>
+
+  <div class="cta-box">
+    <h2>Need a data center's water balance and discharge position established?</h2>
+    <p>Cooling design read from the drawings, source permits and blowdown route traced to the discharge point, and an effectiveness figure computed against the benchmarks your lenders and tenants use — part of our <a href="../services/esdd-esg-en.html" style="color:#fff;text-decoration:underline">ESDD/ESG practice</a>.</p>
+    <a class="btn" href="../index.html#contact">Start a confidential discussion</a>
+  </div>
+
+  <div class="pn">
+    <a href="data-center-backup-power-permits-korea.html"><span class="lbl">&larr; Previous article</span><span class="t">Backup Power Is a Permit Stack: Generators, Fuel Storage, and Emissions at Korean Data Centers</span></a>
+  <a class="next" href="data-center-construction-ehs-korea.html"><span class="lbl">Next article &rarr;</span><span class="t">Building a Data Center in Korea: The Construction-Phase EHS an Investor Inherits</span></a>
+    </div>
+
+  <p class="reviewed">Last reviewed: 19 November 2026 · Dime Works</p>
+</div>
+
+<footer>© 2026 Dime Works · <a href="../index.html">dime-works.com</a> · <a href="../privacy.html">Privacy</a></footer>
+
+</body>
+</html>
